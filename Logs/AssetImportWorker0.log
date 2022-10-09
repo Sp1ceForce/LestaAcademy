@@ -667,3 +667,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1162.423262 seconds.
+  path: Assets/Scripts/BaseBlock.cs
+  artifactKey: Guid(997c536724be95c409aed82157029be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BaseBlock.cs using Guid(997c536724be95c409aed82157029be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a6bc83a7548caae4df95430696a1d5') in 0.003847 seconds 
