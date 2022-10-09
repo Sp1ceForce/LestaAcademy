@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7680839397067251249
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238071258749115814, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6510873694736435778, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: _blockColors
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047475708573532402, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_Name
+      value: Orange Block Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826013514280144073, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_Color.b
+      value: 0.05882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826013514280144073, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826013514280144073, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a45a789932f84a46945b363735478b6, type: 3}

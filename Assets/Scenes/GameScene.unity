@@ -152,6 +152,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.3, y: 2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 17
@@ -198,8 +199,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 3, y: 2}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 2
 --- !u!212 &31606299
 SpriteRenderer:
@@ -282,6 +282,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 3.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 3
@@ -328,8 +329,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 0, y: 3}
-  RequiredColor: 1
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &33931792
 SpriteRenderer:
@@ -412,6 +412,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1, y: 2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 7
@@ -458,8 +459,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 1, y: 2}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 2
 --- !u!212 &34388955
 SpriteRenderer:
@@ -542,6 +542,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.9200001, y: 2.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -584,9 +585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04930cc8b71b1843bb798a5e11b6367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineCells:
-  - {fileID: 634227070}
+  RequiredColor: 1
+  cellsInLine:
   - {fileID: 183992883}
+  - {fileID: 634227070}
   - {fileID: 1334139395}
   - {fileID: 33931791}
   - {fileID: 1263889302}
@@ -671,6 +673,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.4, y: 3.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 23
@@ -717,8 +720,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 4, y: 3}
-  RequiredColor: 3
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &163423354
 SpriteRenderer:
@@ -801,9 +803,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &183992882
 BoxCollider2D:
@@ -847,8 +850,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 0, y: 1}
-  RequiredColor: 1
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &183992884
 SpriteRenderer:
@@ -931,6 +933,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.3, y: 4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 19
@@ -977,8 +980,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 3, y: 4}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 2
 --- !u!212 &260530015
 SpriteRenderer:
@@ -1032,6 +1034,107 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &288507469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288507473}
+  - component: {fileID: 288507472}
+  - component: {fileID: 288507471}
+  - component: {fileID: 288507470}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &288507470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288507469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &288507471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288507469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &288507472
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288507469}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &288507473
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288507469}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1992731158}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &433874601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,6 +1164,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.4, y: 1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 21
@@ -1107,8 +1211,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 4, y: 1}
-  RequiredColor: 3
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &433874605
 SpriteRenderer:
@@ -1198,7 +1301,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1241,6 +1344,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1274,9 +1378,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &634227069
 BoxCollider2D:
@@ -1320,8 +1425,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 0, y: 0}
-  RequiredColor: 1
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &634227071
 SpriteRenderer:
@@ -1404,6 +1508,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.4, y: 4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 24
@@ -1450,8 +1555,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 4, y: 4}
-  RequiredColor: 3
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &639740785
 SpriteRenderer:
@@ -1534,6 +1638,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 15
@@ -1580,8 +1685,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 3, y: 0}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 2
 --- !u!212 &665380865
 SpriteRenderer:
@@ -1664,6 +1768,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.2, y: 4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 14
@@ -1710,8 +1815,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 2, y: 4}
-  RequiredColor: 2
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &709946213
 SpriteRenderer:
@@ -1794,6 +1898,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.4, y: 2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 22
@@ -1840,8 +1945,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 4, y: 2}
-  RequiredColor: 3
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &777556044
 SpriteRenderer:
@@ -1924,6 +2028,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.2, y: 3.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 13
@@ -1970,8 +2075,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 2, y: 3}
-  RequiredColor: 2
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &819493956
 SpriteRenderer:
@@ -2054,6 +2158,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1, y: 3.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 8
@@ -2100,8 +2205,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 1, y: 3}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &913215683
 SpriteRenderer:
@@ -2184,6 +2288,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.2, y: 2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 12
@@ -2230,8 +2335,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 2, y: 2}
-  RequiredColor: 2
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &1000737373
 SpriteRenderer:
@@ -2314,6 +2418,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 20
@@ -2360,8 +2465,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 4, y: 0}
-  RequiredColor: 3
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &1071855466
 SpriteRenderer:
@@ -2444,6 +2548,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.48, y: 2.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2486,7 +2591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04930cc8b71b1843bb798a5e11b6367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineCells:
+  RequiredColor: 3
+  cellsInLine:
   - {fileID: 1071855465}
   - {fileID: 433874604}
   - {fileID: 777556043}
@@ -2573,6 +2679,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1, y: 4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 9
@@ -2619,8 +2726,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 1, y: 4}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 2
 --- !u!212 &1143029932
 SpriteRenderer:
@@ -2703,6 +2809,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 5
@@ -2749,8 +2856,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 1, y: 0}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 2
 --- !u!212 &1173634693
 SpriteRenderer:
@@ -2813,6 +2919,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1178772204}
+  - component: {fileID: 1178772206}
+  - component: {fileID: 1178772205}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -2830,10 +2938,35 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.95077264, y: -1.0902095, z: -49.6848}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1178772205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178772203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602ef2539c1a82c4f93f9096c87e2cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1178772206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178772203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60403e2a97a48c042895784879c7d334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1263889299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,6 +2996,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 4.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 4
@@ -2909,8 +3043,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 0, y: 4}
-  RequiredColor: 1
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &1263889303
 SpriteRenderer:
@@ -2993,6 +3126,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 2
@@ -3039,8 +3173,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 0, y: 2}
-  RequiredColor: 1
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &1334139396
 SpriteRenderer:
@@ -3123,6 +3256,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.3, y: 1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 16
@@ -3169,8 +3303,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 3, y: 1}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &1441822135
 SpriteRenderer:
@@ -3224,6 +3357,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1460349273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460349274}
+  - component: {fileID: 1460349276}
+  - component: {fileID: 1460349275}
+  m_Layer: 5
+  m_Name: Advice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1460349274
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460349273}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1992731158}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.004333496, y: 0.00064849854}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.49999994}
+--- !u!114 &1460349275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460349273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 39
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 ESC \u0447\u0442\u043E\u0431\u044B
+    \u0432\u044B\u0439\u0442\u0438\n"
+--- !u!222 &1460349276
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460349273}
+  m_CullTransparentMesh: 1
 --- !u!1 &1516814253
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,6 +3467,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1, y: 1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 6
@@ -3299,8 +3514,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 1, y: 1}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &1516814257
 SpriteRenderer:
@@ -3383,6 +3597,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.3, y: 3.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 18
@@ -3429,8 +3644,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 3, y: 3}
-  RequiredColor: 0
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &1708943233
 SpriteRenderer:
@@ -3513,6 +3727,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.2, y: 1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 11
@@ -3559,8 +3774,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 2, y: 1}
-  RequiredColor: 2
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &1738196350
 SpriteRenderer:
@@ -3640,14 +3854,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 1915283044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ddab4ad1c5f4948996bb7faecbe961, type: 3}
+  m_Script: {fileID: 11500000, guid: e6de7215530be934a98ddfe4547dd886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cellPrefab: {fileID: 5721261177110257028, guid: 6f1403d333aa88641b8498f87d61d2f7, type: 3}
   width: 5
   height: 5
-  xSpacing: 0.1
-  ySpacing: 0.1
+  cellsList:
+  - {fileID: 634227070}
+  - {fileID: 183992883}
+  - {fileID: 1334139395}
+  - {fileID: 33931791}
+  - {fileID: 1263889302}
+  - {fileID: 1173634692}
+  - {fileID: 1516814256}
+  - {fileID: 34388954}
+  - {fileID: 913215682}
+  - {fileID: 1143029931}
+  - {fileID: 2104772979}
+  - {fileID: 1738196349}
+  - {fileID: 1000737372}
+  - {fileID: 819493955}
+  - {fileID: 709946212}
+  - {fileID: 665380864}
+  - {fileID: 1441822134}
+  - {fileID: 31606298}
+  - {fileID: 1708943232}
+  - {fileID: 260530014}
+  - {fileID: 1071855465}
+  - {fileID: 433874604}
+  - {fileID: 777556043}
+  - {fileID: 163423353}
+  - {fileID: 639740784}
+  xSpacing: 0.2
+  ySpacing: 0.2
+  totalBlocks: 15
+  RedBlock: {fileID: 6510873694736435778, guid: 7a45a789932f84a46945b363735478b6, type: 3}
+  OrangeBlock: {fileID: 3516352111903741043, guid: 3daa8fc7c11eae744bbdb4dcb23a2680, type: 3}
+  YellowBlock: {fileID: 304395401632120434, guid: 130ed12ed05a2284595c2853106d4363, type: 3}
 --- !u!4 &1915283046
 Transform:
   m_ObjectHideFlags: 0
@@ -3658,9 +3902,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.9200001, y: -3.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 634227068}
   - {fileID: 183992881}
+  - {fileID: 634227068}
   - {fileID: 1334139393}
   - {fileID: 33931789}
   - {fileID: 1263889300}
@@ -3716,6 +3961,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.27999997, y: 2.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -3758,7 +4004,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04930cc8b71b1843bb798a5e11b6367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineCells:
+  RequiredColor: 2
+  cellsInLine:
   - {fileID: 2104772979}
   - {fileID: 1738196349}
   - {fileID: 1000737372}
@@ -3816,6 +4063,96 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1992731157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1992731158}
+  - component: {fileID: 1992731160}
+  - component: {fileID: 1992731159}
+  - component: {fileID: 1992731161}
+  m_Layer: 5
+  m_Name: BackPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1992731158
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992731157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1460349274}
+  m_Father: {fileID: 288507473}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 271.622, y: -35.911}
+  m_SizeDelta: {x: 543.243, y: 71.821}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1992731159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992731157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1992731160
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992731157}
+  m_CullTransparentMesh: 1
+--- !u!114 &1992731161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992731157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81fc318f41f62848bf505c25d8ad4c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2068250252
 GameObject:
   m_ObjectHideFlags: 0
@@ -3846,6 +4183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -3878,6 +4216,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -3911,6 +4250,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1915283046}
   m_RootOrder: 10
@@ -3957,8 +4297,7 @@ MonoBehaviour:
   OnHoverColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0.5176471}
   BaseColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.5176471}
   Position: {x: 2, y: 0}
-  RequiredColor: 2
-  IsActive: 1
+  IsActivated: 0
   cellState: 0
 --- !u!212 &2104772980
 SpriteRenderer:

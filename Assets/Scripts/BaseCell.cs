@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public enum CellState
@@ -8,36 +7,35 @@ public enum CellState
     OCCUPIED,
     BLOCKED,
 }
-public enum BlockColors
-{
-    NONE = 0,
-    RED = 1,
-    ORANGE = 2,
-    YELLOW = 3
 
-}
 public class BaseCell : MonoBehaviour
 {
-    //÷вета €чейки(чисто косметическа€ вещь)
+    public Action<BaseCell> OnCellUpdate;
+
+    //Default cell colors
+    [Header("Colors")]
     public Color BlockedColor;
     public Color OnHoverColor;
     public Color BaseColor;
-    //ѕозици€ €чейки в матрице
-    public Vector2Int Position;
-    //“ребуемый цвет линии
-    public BlockColors RequiredColor;
 
-    public bool IsActive;
+    //Position of cell in matrix
+    [Header("Position")]
+    public Vector2Int Position;
+
+
+    public bool IsActivated;
+
     public CellState CellState { get => cellState; }
     [SerializeField] private CellState cellState;
-    private CellsController myCellController;
+
+    public BaseBlock BlockInside { get; private set; }
+
     private void Start()
     {
-        if (!IsActive) return;
         SetDefaultColor();
     }
-    //—менить цвет €чейки в зависимости от еЄ типа
-    private void SetDefaultColor()
+
+    public void SetDefaultColor()
     {
         if (cellState == CellState.BLOCKED)
         {
@@ -49,26 +47,41 @@ public class BaseCell : MonoBehaviour
         }
     }
 
-    public void Init(int x, int y, CellsController cellsController, bool isActive)
+    public void Init(int x, int y)
     {
+        cellState = CellState.EMPTY;
         Position = new Vector2Int(x, y);
-        myCellController = cellsController;
-        IsActive = isActive;
+
     }
     private void OnMouseDown()
     {
-        if (CellState == CellState.BLOCKED || !IsActive) return;
-        
+        if (CellState == CellState.BLOCKED || IsActivated) return;
+        BlocksMover.Instance.OnCellClick(this);
+    }
+    public void PutInNewBlock(BaseBlock newBlock)
+    {
+        newBlock.transform.parent = transform;
+        newBlock.transform.localPosition = Vector2.zero;
+        BlockInside = newBlock;
+        cellState = CellState.OCCUPIED;
+        OnCellUpdate?.Invoke(this);
+    }
+    public void RemoveBlock()
+    {
+        cellState = CellState.EMPTY;
+        BlockInside = null;
+        OnCellUpdate?.Invoke(this);
+
     }
     private void OnMouseEnter()
     {
-        if (CellState == CellState.BLOCKED || !IsActive) return;
+        if (CellState == CellState.BLOCKED || IsActivated) return;
         GetComponent<SpriteRenderer>().color = OnHoverColor;
     }
 
     private void OnMouseExit()
     {
-        if (CellState == CellState.BLOCKED || !IsActive) return;
+        if (CellState == CellState.BLOCKED || IsActivated) return;
         GetComponent<SpriteRenderer>().color = BaseColor;
     }
 }
